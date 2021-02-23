@@ -11,24 +11,9 @@ class StudentSeeder extends Seeder
      */
     public function run()
     {
-      $studentList = [
-        [
-          'name' => 'Alessandro',
-          'lastname' => 'primo'
-        ],
-        [
-          'name' => 'Giorgio',
-          'lastname' => 'secondo'
-        ],
-        [
-          'name' => 'Mario',
-          'lastname' => 'terzo'
-        ],
-        [
-          'name' => 'Franco',
-          'lastname' => 'quarto'
-        ]
-      ];
+      $studentList = config('students');
+
+
 
       foreach ($studentList as $value) {
         $newStudent = new Student();

@@ -1,5 +1,5 @@
 <?php
-use App/Student
+use App\Student;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -11,6 +11,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-
+      
     }
 }

@@ -1,8 +1,9 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Faker\Generator as Faker;
 use App\Course;
+use Faker\Generator as Faker;
+
 class CourseSeeder extends Seeder
 {
     /**
@@ -14,9 +15,9 @@ class CourseSeeder extends Seeder
     {
       for ($i=0; $i < 5; $i++) {
         $newCourse = new Course();
-        $newCourse->nome = $faker->name;
-        $newCourse->materia = $faker->CountryCode;
-        $newCourse->classe = $faker->randomLetter;
+        $newCourse->nome = $faker->name();
+        $newCourse->materia = $faker->CountryCode();
+        $newCourse->classe = $faker->randomLetter();
         $newCourse->save();
       }
     }
